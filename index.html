@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Morgan Kegode Medical Supplies - non-pharmaceutical medical supplies in Kakamega, Kenya.">
+<title>Morgan Kegode Medical Supplies | Kakamega</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#"><span class="logo">MK</span><span>Morgan Kegode<br><small>Medical Supplies</small></span></a>
+    <div class="contact-mini"><a href="https://wa.me/254116475174">WhatsApp 0116 475 174</a><span>📍 Kakamega, Kenya</span></div>
+  </div>
+</header>
+
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <span class="eyebrow">RELIABLE NON-PHARMACEUTICAL SUPPLIES</span>
+   <h1>Medical supplies you can <span>count on.</span></h1>
+   <p>Shop wound-care consumables, baby & mother care, hygiene products, medical devices and laboratory essentials in Kakamega.</p>
+   <div class="hero-actions">
+    <a class="btn primary" href="https://wa.me/254116475174?text=Hello%20Morgan%20Kegode%20Medical%20Supplies,%20I%20would%20like%20to%20make%20an%20order.">Order on WhatsApp</a>
+    <a class="btn secondary" href="#products">View products</a>
+   </div>
+  </div>
+  <div class="hero-card">
+    <div class="shield">✚</div>
+    <h3>Kakamega-based</h3>
+    <p>Retail medical and non-pharmaceutical supplies.</p>
+    <strong>Prices shown in KES</strong>
+  </div>
+ </div>
+</section>
+
+<section class="catalog container" id="products">
+ <div class="section-head">
+   <div><span class="eyebrow">PRODUCT CATALOG</span><h2>Shop our supplies</h2></div>
+   <div class="controls">
+    <input id="search" type="search" placeholder="Search products..." aria-label="Search products">
+    <select id="category" aria-label="Filter by category"><option value="all">All categories</option></select>
+   </div>
+ </div>
+ <div id="productsGrid" class="products-grid"></div>
+ <p id="noResults" class="no-results" hidden>No products match your search.</p>
+</section>
+
+<section class="about">
+ <div class="container about-grid">
+  <div><span class="eyebrow">WHY SHOP WITH US?</span><h2>Simple ordering. Clear prices.</h2><p>Every listed item has one retail price in Kenyan shillings. Tap WhatsApp on any product to ask about availability or place an order.</p></div>
+  <div class="features"><div>✓ Clear retail prices</div><div>✓ Kakamega service</div><div>✓ WhatsApp ordering</div><div>✓ Medical & hygiene supplies</div></div>
+ </div>
+</section>
+
+<footer>
+ <div class="container footer-grid">
+  <div><h3>Morgan Kegode Medical Supplies</h3><p>Reliable non-pharmaceutical supplies in Kakamega, Kenya.</p></div>
+  <div><strong>Contact</strong><p>WhatsApp: <a href="https://wa.me/254116475174">0116 475 174</a><br>Email: <a href="mailto:morgankegode063@gmail.com">morgankegode063@gmail.com</a><br>Location: Kakamega, Kenya</p></div>
+ </div>
+ <div class="copyright">© 2026 Morgan Kegode Medical Supplies. All rights reserved.</div>
+</footer>
+<script>
+const products = [{"category": "Wound Dressing & Consumables", "name": "Elastoplast / Adhesive Bandage Roll", "price": 115, "image": "images/adhesive-bandage-roll.svg"}, {"category": "Wound Dressing & Consumables", "name": "Gauze Roll 100g", "price": 160, "image": "images/gauze-roll-100g.svg"}, {"category": "Wound Dressing & Consumables", "name": "Cotton Wool 100g", "price": 125, "image": "images/cotton-wool-100g.svg"}, {"category": "Wound Dressing & Consumables", "name": "Cotton Wool 500g", "price": 400, "image": "images/cotton-wool-500g.svg"}, {"category": "Wound Dressing & Consumables", "name": "Surgical Gloves Latex - Per Pair", "price": 50, "image": "images/surgical-gloves-pair.svg"}, {"category": "Wound Dressing & Consumables", "name": "Surgical Gloves Box 50 Pairs", "price": 2100, "image": "images/surgical-gloves-box-50.svg"}, {"category": "Wound Dressing & Consumables", "name": "Syringe 5ml with Needle", "price": 20, "image": "images/syringe-5ml.svg"}, {"category": "Wound Dressing & Consumables", "name": "Syringe 10ml", "price": 25, "image": "images/syringe-10ml.svg"}, {"category": "Wound Dressing & Consumables", "name": "Surgical Spirit 100ml", "price": 185, "image": "images/surgical-spirit-100ml.svg"}, {"category": "Baby & Mother Care", "name": "Molfix / Pampers Diapers Medium 40s", "price": 1350, "image": "images/diapers-medium-40s.svg"}, {"category": "Baby & Mother Care", "name": "Baby Wipes 80s", "price": 325, "image": "images/baby-wipes-80s.svg"}, {"category": "Baby & Mother Care", "name": "Baby Powder 100g", "price": 200, "image": "images/baby-powder-100g.svg"}, {"category": "Baby & Mother Care", "name": "Baby Oil 200ml", "price": 275, "image": "images/baby-oil-200ml.svg"}, {"category": "Baby & Mother Care", "name": "Feeding Bottle 250ml", "price": 425, "image": "images/feeding-bottle-250ml.svg"}, {"category": "Baby & Mother Care", "name": "Always Sanitary Pads 10s", "price": 175, "image": "images/always-pads-10.svg"}, {"category": "Baby & Mother Care", "name": "Always Sanitary Pads 16s", "price": 315, "image": "images/always-pads-16.svg"}, {"category": "Baby & Mother Care", "name": "Adult Diapers Shuggy 10s M/L", "price": 2150, "image": "images/adult-diapers-10.svg"}, {"category": "Personal Care & Hygiene", "name": "Dettol Antiseptic 250ml", "price": 400, "image": "images/dettol-250ml.svg"}, {"category": "Personal Care & Hygiene", "name": "Dettol Antiseptic 500ml", "price": 725, "image": "images/dettol-500ml.svg"}, {"category": "Personal Care & Hygiene", "name": "Hand Sanitizer 500ml", "price": 375, "image": "images/hand-sanitizer-500ml.svg"}, {"category": "Personal Care & Hygiene", "name": "Colgate Toothpaste 100g", "price": 215, "image": "images/colgate-100g.svg"}, {"category": "Personal Care & Hygiene", "name": "Nivea Body Lotion 400ml", "price": 750, "image": "images/nivea-lotion-400ml.svg"}, {"category": "Personal Care & Hygiene", "name": "Petroleum Jelly 250g", "price": 250, "image": "images/petroleum-jelly-250g.svg"}, {"category": "Personal Care & Hygiene", "name": "Disposable Razor", "price": 40, "image": "images/disposable-razor.svg"}, {"category": "Medical Devices / General Items", "name": "Digital Blood Pressure Machine", "price": 4500, "image": "images/digital-bp-machine.svg"}, {"category": "Medical Devices / General Items", "name": "Digital Thermometer", "price": 675, "image": "images/digital-thermometer.svg"}, {"category": "Medical Devices / General Items", "name": "Glucometer + 25 Strips Kit", "price": 2100, "image": "images/glucometer-kit.svg"}, {"category": "Medical Devices / General Items", "name": "Bathroom Weighing Scale", "price": 3800, "image": "images/weighing-scale.svg"}, {"category": "Medical Devices / General Items", "name": "Hot Water Bottle", "price": 475, "image": "images/hot-water-bottle.svg"}, {"category": "Medical Devices / General Items", "name": "Face Masks 3-ply Box 50s", "price": 325, "image": "images/face-masks-50.svg"}, {"category": "Medical Devices / General Items", "name": "Hand Wash Liquid 500ml", "price": 325, "image": "images/hand-wash-500ml.svg"}, {"category": "Lab & Others", "name": "Urine Container", "price": 25, "image": "images/urine-container.svg"}, {"category": "Lab & Others", "name": "Condoms 3s Pack", "price": 125, "image": "images/condoms-3.svg"}, {"category": "Lab & Others", "name": "Mosquito Repellent Spray", "price": 400, "image": "images/mosquito-repellent.svg"}, {"category": "Lab & Others", "name": "Water for Injection 10ml", "price": 40, "image": "images/water-for-injection.svg"}];
+const grid = document.getElementById('productsGrid');
+const search = document.getElementById('search');
+const category = document.getElementById('category');
+const noResults = document.getElementById('noResults');
+
+[...new Set(products.map(p=>p.category))].forEach(c => {
+  const o=document.createElement('option'); o.value=c; o.textContent=c; category.appendChild(o);
+});
+
+function render() {
+ const q=search.value.toLowerCase().trim(), c=category.value;
+ const filtered=products.filter(p => (!q || p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q)) && (c==='all'||p.category===c));
+ grid.innerHTML=filtered.map(p => {
+   const wa='https://wa.me/254116475174?text='+encodeURIComponent('Hello Morgan Kegode Medical Supplies, I would like to order: '+p.name+' - KSh '+p.price.toLocaleString());
+   return `<article class="product-card">
+      <img src="${p.image}" alt="${p.name}" loading="lazy">
+      <div class="product-body"><span class="tag">${p.category}</span><h3>${p.name}</h3>
+      <div class="price">KSh ${p.price.toLocaleString()}</div>
+      <a class="order" href="${wa}" target="_blank" rel="noopener">Order on WhatsApp →</a></div>
+   </article>`;
+ }).join('');
+ noResults.hidden=filtered.length>0;
+}
+search.addEventListener('input',render); category.addEventListener('change',render); render();
+</script>
+</body>
+</html>

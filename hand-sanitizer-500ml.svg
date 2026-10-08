@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+<rect width="800" height="520" rx="32" fill="#eef7f5"/>
+<circle cx="400" cy="225" r="125" fill="#ffffff" stroke="#0b6b62" stroke-width="5"/>
+<path d="M340 245h120M365 215h70M380 185h40" stroke="#0b6b62" stroke-width="12" stroke-linecap="round"/>
+<text x="400" y="390" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#123"> Hand Sanitizer 500ml </text>
+<text x="400" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#4b635f">Personal Care &amp; Hygiene</text>
+</svg>
